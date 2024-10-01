@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="오늘 하루는 어땠나요?"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="30dp"
+        android:layout_marginTop="60dp" />
+
+    <TextView
+        android:id="@+id/TextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="감정우표를 선택해주세요"
+        app:layout_constraintTop_toBottomOf="@id/TextView1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/TextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="선택한 감정우표를 기반으로 맞춤형 질문이 배달됩니다."
+        app:layout_constraintTop_toBottomOf="@id/TextView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="10dp"
+        android:layout_marginTop="20dp" />
+
+
+    <!-- 행복 감정 -->
+    <ImageView
+        android:id="@+id/emotionImage1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/draw1"
+        app:layout_constraintTop_toBottomOf="@id/TextView3"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:id="@+id/emotionText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="더없이 행복한 하루였어요"
+        app:layout_constraintTop_toBottomOf="@id/emotionImage1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- 흥분 감정 -->
+    <ImageView
+        android:id="@+id/emotionImage2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/draw2"
+        app:layout_constraintTop_toBottomOf="@id/emotionText1"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/emotionText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="들뜨고 흥분돼요"
+        app:layout_constraintTop_toBottomOf="@id/emotionImage2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- 평범 감정 -->
+    <ImageView
+        android:id="@+id/emotionImage3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/draw3"
+        app:layout_constraintTop_toBottomOf="@id/emotionText2"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/emotionText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="평범한 하루였어요"
+        app:layout_constraintTop_toBottomOf="@id/emotionImage3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- 불안 감정 -->
+    <ImageView
+        android:id="@+id/emotionImage4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/draw4"
+        app:layout_constraintTop_toBottomOf="@id/emotionText3"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/emotionText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="생각이 많아지고 불안해요"
+        app:layout_constraintTop_toBottomOf="@id/emotionImage4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- 분노 감정 -->
+    <ImageView
+        android:id="@+id/emotionImage5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/draw5"
+        app:layout_constraintTop_toBottomOf="@id/emotionText4"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/emotionText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="부글부글 화가 나요"
+        app:layout_constraintTop_toBottomOf="@id/emotionImage5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
