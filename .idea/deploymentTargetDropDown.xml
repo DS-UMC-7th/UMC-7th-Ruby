@@ -5,6 +5,12 @@
       <entry key="app">
         <State />
       </entry>
+      <entry key="app.week2">
+        <State />
+      </entry>
+      <entry key="week2">
+        <State />
+      </entry>
     </value>
   </component>
 </project>
